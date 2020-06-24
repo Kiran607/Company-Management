@@ -1,0 +1,36 @@
+.sidenav{
+    height: 100%;
+    width: 300px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color:dimgray;
+    padding-top: 100px;
+}
+
+.content{
+    display: flex;
+    justify-content: center;
+}
+
+.sidenav a {
+    color: white;
+    padding: 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 18px;
+  }
+
+  .sidenav i{
+    padding-right: 20px;
+  }
+
+  .sidenav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+img{
+    background: white;
+    width: 50px;
+}
