@@ -12,17 +12,23 @@
 .content{
     display: flex;
     justify-content: center;
+    font-size: 2rem;
+    color: dimgray;
+}
+
+#text{
+  padding-left: 20px;
 }
 
 .sidenav a {
     color: white;
-    padding: 16px;
+    padding: 18px;
     text-decoration: none;
     display: block;
-    font-size: 18px;
+    font-size: 24px;
   }
 
-  .sidenav i{
+  .sidenav a{
     padding-right: 20px;
   }
 
@@ -30,7 +36,63 @@
     background-color: #ddd;
     color: black;
   }
-img{
-    background: white;
-    width: 50px;
+img {
+   padding-right: 20px;     
+   width: 25px;   
+   -webkit-filter: invert(100%);   
+  }
+
+text{
+  padding-left: 20px;
 }
+
+.add-content{
+  display: flex;
+  justify-content: flex-start;
+  font-size: 2rem;
+  padding-left: 315px;
+  color: dimgrey;
+}
+
+.topnav .search-container {
+  display: flex;
+  justify-content: center;
+}
+
+.topnav input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+}
+
+/* .topnav .search-container button {
+  float: right;
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+} */
+
+.topnav {
+  overflow: hidden;
+  background-color: #e9e9e9;
+}
+
+form{
+  margin-top: 50px;
+  padding-left: 580px;
+}
+
+/* @media only screen and (max-height: 425px) {
+ .sidenav {padding-top: 15px;}
+  .sidenav {width: 180px;}
+  .sidenav a {font-size: 10px;}
+  .sidenav img{width: 15px;}
+  .content {font-size: medium;}
+  .content {margin-left: 200px;}
+} */
+
