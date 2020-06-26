@@ -6,7 +6,6 @@
     top: 0;
     left: 0;
     background-color:dimgray;
-    padding-top: 100px;
 }
 
 .content{
@@ -34,12 +33,51 @@
 
   .sidenav a:hover {
     background-color: #ddd;
-    color: black;
+    color:black;
   }
-img {
+  /* img {
    padding-right: 20px;     
    width: 25px;   
    -webkit-filter: invert(100%);   
+  } */
+
+  .homeImg{
+    padding-right: 20px;     
+    width: 25px;   
+    -webkit-filter: invert(100%); 
+  }
+
+  .addImg{
+    padding-right: 20px;     
+    width: 25px;   
+    -webkit-filter: invert(100%); 
+  }
+
+  .manageImg{
+    padding-right: 20px;     
+    width: 25px;   
+    -webkit-filter: invert(100%);
+  }
+
+  .feesImg{
+    padding-right: 20px;     
+    width: 25px;   
+    -webkit-filter: invert(100%); 
+  }
+  .billingImg{
+    padding-right: 20px;     
+    width: 25px;   
+    -webkit-filter: invert(100%);
+  }
+  .comissionsImg{
+    padding-right: 20px;     
+    width: 25px;   
+    -webkit-filter: invert(100%);
+  }
+  .settingImg{
+    padding-right: 20px;     
+    width: 25px;   
+    -webkit-filter: invert(100%);
   }
 
 .add-content{
@@ -47,7 +85,8 @@ img {
   justify-content: flex-start;
   font-size: x-large;
   color: dimgrey;
-  padding-left: 410px
+  padding-left: 410px;
+  font-family: sans-serif;
 }
 
 .topnav {
@@ -58,6 +97,11 @@ img {
 form{
   padding-top: 40px;
   padding-left: 580px;
+}
+
+.manageForm{
+  padding-top: 40px;
+  padding-left: 250px;
 }
 
 .information{
@@ -74,7 +118,14 @@ th{
 .companyInformation{
   padding-left: 410px;
   color: dimgrey;
-  font-size: xx-large
+  font-size: xx-large;
+}
+
+#companyLogo{
+  width: 80px;
+  padding-left: 120px;
+  height: 80px;
+  padding-top: 20px;
 }
 
 .btnSave{
@@ -85,10 +136,19 @@ th{
   height: 34px;
   font-size: 20px;
   padding: 5px;
-  margin-left: 100px;
+  margin-left: 30px;
   border: none;
   border-radius: 4px
 }
+.btnCancel{
+  text-align: center;
+  width: 150px;
+  height: 34px;
+  font-size: 20px;
+  padding: 5px;
+  margin-left: 30px;
+}
+
 .nameText{
   width: 400px;
   padding: 0.6em;
@@ -98,7 +158,7 @@ th{
 .emailText{
   width:400px;
   padding: 0.6em;
-  margin-left: 108px;
+  margin-left: 30px;
 }
 
 .name{
@@ -108,7 +168,7 @@ th{
 }
 
 .email{
-  padding-left: 100px;
+  padding-left: 20px;
   font-size: 20px;
   font-family: sans-serif;
   font-weight: 500;
@@ -126,7 +186,7 @@ th{
   border: none;
 }
 
-.add-content i {
+.add-content .caretImg {
   position: absolute;
 }
 
@@ -135,16 +195,147 @@ th{
   height: 30px;
   border: none;
   background: white;
+  padding-top: 5px;
+  color: dimgrey;
 }
 
+.sidenav #home::after{
+  content: ' \003E';
+  padding-left: 200px;
+  font-size: 30px;
+  font-weight: 900;
+  visibility: hidden;
+}
 
+.sidenav #add::after{
+  content: ' \003E';
+  padding-left: 120px;
+  font-size: 30px;
+  font-weight: 900;
+  visibility: hidden;
+}
 
-/* @media only screen and (max-height: 425px) {
+.sidenav #manage::after{
+  content: ' \003E';
+  padding-left: 180px;
+  font-size: 30px;
+  font-weight: 900;
+  visibility: hidden;
+}
+
+.sidenav #fees::after{
+  content: ' \003E';
+  padding-left: 80px;
+  font-size: 30px;
+  font-weight: 900;
+  visibility: hidden;
+}
+
+.sidenav #billing::after{
+  content: ' \003E';
+  padding-left: 90px;
+  font-size: 30px;
+  font-weight: 900;
+  visibility: hidden;
+}
+
+.sidenav #comissions::after{
+  content: ' \003E';
+  padding-left: 145px;
+  font-size: 30px;
+  font-weight: 900;
+  visibility: hidden;
+}
+
+.sidenav #settings::after{
+  content: ' \003E';
+  padding-left: 180px;
+  font-size: 30px;
+  font-weight: 900;
+  visibility: hidden;
+}
+
+#proxyLogin{
+  background-color: rgb(114, 209, 247);
+  width: 140px;
+  text-align: center;
+  color: white;
+  border: none;
+  font-family: sans-serif;
+  font-size: 18px;
+  margin-left: 1340px;
+  height: 35px;
+  font-weight: bold;
+}
+
+#Back{
+  margin-right: 20px;
+  color: black;
+  width: 140px;
+  font-size: 18px;
+  font-family: sans-serif;
+  height: 35px;
+}
+
+.userLimit{
+  padding-top: 30px;
+  padding-left: 410px;
+  font-size: x-large;
+  font-family: sans-serif;
+  font-weight: 100;
+  color: dimgrey;
+}
+
+.userSave{
+  background-color: rgb(8, 189, 8);
+  color: white;
+  text-align: center;
+  width: 150px;
+  height: 34px;
+  font-size: 20px;
+  padding: 5px;
+  margin-left: 30px;
+  border: none;
+}
+
+.userLimitBtn{
+  padding-left: 410px;
+  padding-top: 30px
+}
+
+.userCancel{
+  text-align: center;
+  width: 150px;
+  height: 34px;
+  font-size: 20px;
+  padding: 5px;
+  margin-left: 30px;
+}
+
+.user{
+  width: 150px;
+  height: 32px;
+}
+
+.caretImg{
+  width: 20px;
+  color: dimgrey;
+}
+
+.searchImg{
+  width: 17px;
+}
+
+.logo{
+  padding-bottom: 30px;
+}
+
+@media only screen and (max-height: 425px) {
  .sidenav {padding-top: 15px;}
   .sidenav {width: 180px;}
   .sidenav a {font-size: 10px;}
   .sidenav img{width: 15px;}
   .content {font-size: medium;}
   .content {margin-left: 200px;}
-} */
+}
 
