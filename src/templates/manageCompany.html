@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="https://kit.fontawesome.com/40441c2bcc.js" crossorigin="anonymous"></script>
+    <title>Company Management</title>
+</head>
+
+<body>
+    <div class="sidenav">
+        <div class="logo">
+            <img src="../assests/logo.png" alt="" id="companyLogo">
+        </div>
+        <a href="#"> <img src="../assests/home-solid.svg" alt="" class="homeImg"> Home</a>
+        <a href="../templates/addCompany.html"> <img src="../assests/building-solid.svg" alt="" class="addImg"> Add
+            Company</a>
+        <a href="#"><img src="../assests/edit-regular.svg" alt="" class="manageImg"> Manage</a>
+        <a href="#"><img src="../assests/money-bill-wave-alt-solid.svg" alt="" class="feesImg"> Charge Setup Fees</a>
+        <a href="#"><img src="../assests/check-circle-solid.svg" alt="" class="billingImg"> One Time Billing</a>
+        <a href="#"><img src="../assests/file-invoice-solid.svg" alt="" class="comissionsImg"> Comissions</a>
+        <a href="#"><img src="../assests/cog-solid.svg" alt="" class="settingImg"> Settings</a>
+    </div>
+
+    <div class="add-content">
+        <h2>Manage Co / Selected Company </h2>
+        <form class="manageForm">
+                <button id="btnSearch"><img src="../assests/search-solid.svg" alt="" class="searchImg"> </button>
+                <img src="../assests/caret-down-solid.svg" alt="" class="caretImg">
+            <input type="text" placeholder="" name="search" class="search">
+        </form>
+    </div>
+    <hr>
+    <div class="companyInformation">
+        Company Information
+        <button id="proxyLogin">Proxy Login</button>
+        <button id="Back">Back</button>
+    </div>
+    <hr style="width: 81.5%;margin-right: 30px">
+    <div class="information">
+        <table>
+            <tr>
+                <th><label for="comapnyName" class="name">Company Name</label></th>
+                <th><label for="email" class="email">Email </label></th>
+            </tr>
+            <tr>
+                <td>
+                    <input type="text" class="nameText">
+                </td>
+                <td>
+                    <input type="text" class="emailText">
+                </td>
+                <td>
+                    <button class="btnSave">Save</button>
+                </td>
+                <td>
+                    <button class="btnCancel">Cancel</button>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="userLimit">
+        User Limit
+    </div>
+    <hr style="width: 81.5%;margin-right: 30px">
+    <div class="userLimitBtn">
+        <table>
+            <tr>
+                <td>
+                    <input type="text" class="user">
+                </td>
+                <td>
+                    <button class="userSave">Save</button>
+                </td>
+                <td>
+                    <button class="userCancel">Cancel</button>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+</body>
+
+</html>
