@@ -107,7 +107,8 @@ form{
 .information{
   padding-left: 400px;
   font-size: 30px;
-  color: dimgrey
+  color: dimgrey;
+  padding-top: 30px;
 }
 
 th{
@@ -147,6 +148,30 @@ th{
   font-size: 20px;
   padding: 5px;
   margin-left: 30px;
+}
+
+.btnMngSearch{
+  text-align: center;
+  width: 130px;
+  height: 34px;
+  font-size: 20px;
+  padding: 5px;
+  margin-left: 30px;
+  font-weight: bold;
+  font-family: sans-serif;
+  color: dimgrey;
+}
+
+.btnMngCancel{
+  text-align: center;
+  width: 130px;
+  height: 34px;
+  font-size: 20px;
+  padding: 5px;
+  margin-left: 30px;
+  font-weight: bold;
+  font-family: sans-serif;
+  color: dimgrey;
 }
 
 .nameText{
@@ -328,6 +353,39 @@ th{
 
 .logo{
   padding-bottom: 30px;
+}
+
+.manageText{
+  width: 400px;
+  padding: 0.6em;
+  margin-left: 10px
+}
+
+.comapnyList{
+  padding-left: 410px;
+  padding-top: 20px;
+  font-size: x-large;
+}
+
+#companySearch{
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 50%;
+}
+
+#companySearch td, #companySearch th{
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#companySearch tr:nth-child(odd){background-color: #f2f2f2;}
+
+#companySearch th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  padding-right: 135px;
+  background: #f2f2f2;
 }
 
 @media only screen and (max-height: 425px) {
