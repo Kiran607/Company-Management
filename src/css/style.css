@@ -1,4 +1,4 @@
-.sidenav{
+.sidenavAdd{
     height: 100%;
     width: 380px;
     position: fixed;
@@ -19,7 +19,7 @@
   padding-left: 20px;
 }
 
-.sidenav a {
+.sidenavAdd a {
     color: white;
     padding: 18px;
     text-decoration: none;
@@ -27,7 +27,7 @@
     font-size: 24px;
   }
 
-  .sidenav a{
+  .sidenavAdd a{
     padding-right: 20px;
   }
 
@@ -220,52 +220,44 @@ th{
 }
 
  #home:hover::after{
-  content: ' \003E';
+  content: ' \203A';
   padding-left: 200px;
-  font-size: 30px;
   font-weight: 900;
-  /* visibility: hidden; */
 }
 
 #add:hover::after{
-  content: ' \003E';
+  content: ' \203A';
   padding-left: 120px;
-  font-size: 30px;
   font-weight: 900;
 }
 
  #manage:hover::after{
-  content: ' \003E';
+  content: ' \203A';
   padding-left: 180px;
-  font-size: 30px;
   font-weight: 900;
 }
 
 #fees:hover::after{
-  content: ' \003E';
+  content: ' \203A';
   padding-left: 80px;
-  font-size: 30px;
   font-weight: 900;
 }
 
  #billing:hover::after{
-  content: ' \003E';
+  content: ' \203A';
   padding-left: 90px;
-  font-size: 30px;
   font-weight: 900;
 }
 
  #comissions:hover::after{
-  content: ' \003E';
+  content: ' \203A';
   padding-left: 145px;
-  font-size: 30px;
   font-weight: 900;
 }
 
 #settings:hover::after{
-  content: ' \003E';
+  content: ' \203A';
   padding-left: 180px;
-  font-size: 30px;
   font-weight: 900;
 }
 
@@ -422,12 +414,46 @@ th{
   border: none;
 }
 
-@media only screen and (max-height: 425px) {
- .sidenav {padding-top: 15px;}
-  .sidenav {width: 180px;}
-  .sidenav a {font-size: 10px;}
-  .sidenav img{width: 15px;}
-  .content {font-size: medium;}
-  .content {margin-left: 200px;}
-}
+/* for mobile */
+  @media only screen and (max-height: 768px) {
+    .sidenavAdd a{ font-size: 40px;
+      overflow-wrap: break-word;
+    width: auto;}
+    .homeImg{ width: 45px;}
+    .addImg{width: 45px;}
+    .manageImg {width: 45px;}
+    .feesImg {width: 45px;}
+    .billingImg{width: 45px;}
+    .comissionsImg{width: 45px;}
+    .settingImg{width: 45px;}
+    .sidenav{width: 450px;}
+    .add-content{
+      overflow-wrap: break-word;
+      width: 100%;
+      padding-top: 50px;
+      font-size: 30px;
+    }
+    #companyLogo {
+      width: 150px;
+      height: 150px;
+    }
+    .addCompany{
+      width: 100%;
+    }
+
+    form{padding-left: 180px;}
+    .caretImg{width: 32px;padding-top: 40px}
+    .searchImg{width: 30px;margin-top: 50px;}
+    .search{width: 250px;
+      margin-left: 50px;}
+    .companyInformation{
+      font-size: 50px;
+    }
+    .name{font-size: 40px;}
+    .email{font-size: 40px;}
+    .nameText{width: 200px;}
+    .emailText{width: 200px;}
+    .btnSave{font-size: 30px;}
+
+   }
 
