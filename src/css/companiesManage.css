@@ -1,0 +1,471 @@
+.sidenavComapines{
+    height: 100%;
+    width: 380px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color:dimgray;
+}
+
+.content{
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    color: dimgray;
+}
+
+#text{
+  padding-left: 20px;
+}
+
+.sidenavComapines a {
+    color: white;
+    padding: 18px;
+    text-decoration: none;
+    display: block;
+    font-size: 24px;
+  }
+
+  .sidenavComapines a{
+    padding-right: 20px;
+  }
+
+  /* .sidenav a:hover {
+    background-color: #ddd;
+    color:white;
+   } */
+
+  .homeImg{
+    padding-right: 20px;     
+    width: 25px;   
+    -webkit-filter: invert(100%); 
+  }
+
+  .addImg{
+    padding-right: 20px;     
+    width: 25px;   
+    -webkit-filter: invert(100%); 
+  }
+
+  .manageImg{
+    padding-right: 20px;     
+    width: 25px;   
+    -webkit-filter: invert(100%);
+  }
+
+  .feesImg{
+    padding-right: 20px;     
+    width: 25px;   
+    -webkit-filter: invert(100%); 
+  }
+  .billingImg{
+    padding-right: 20px;     
+    width: 25px;   
+    -webkit-filter: invert(100%);
+  }
+  .comissionsImg{
+    padding-right: 20px;     
+    width: 25px;   
+    -webkit-filter: invert(100%);
+  }
+  .settingImg{
+    padding-right: 20px;     
+    width: 25px;   
+    -webkit-filter: invert(100%);
+  }
+
+.add-content{
+  display: flex;
+  justify-content: flex-start;
+  font-size: x-large;
+  color: dimgrey;
+  padding-left: 410px;
+  font-family: sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #e9e9e9;
+}
+
+form{
+  padding-top: 40px;
+  padding-left: 580px;
+}
+
+.manageForm{
+  padding-top: 40px;
+  padding-left: 250px;
+}
+
+.information{
+  padding-left: 400px;
+  font-size: 30px;
+  color: dimgrey;
+  padding-top: 30px;
+}
+
+th{
+  text-align: left;
+  padding: 8px;
+}
+
+.companyInformation{
+  padding-left: 410px;
+  color: dimgrey;
+  font-size: xx-large;
+}
+
+#companyLogo{
+  width: 80px;
+  padding-left: 120px;
+  height: 80px;
+  padding-top: 20px;
+}
+
+.btnSave{
+  background-color: rgb(8, 189, 8);
+  color: white;
+  text-align: center;
+  width: 150px;
+  height: 34px;
+  font-size: 20px;
+  padding: 5px;
+  margin-left: 30px;
+  border: none;
+  border-radius: 4px
+}
+.btnCancel{
+  text-align: center;
+  width: 150px;
+  height: 34px;
+  font-size: 20px;
+  padding: 5px;
+  margin-left: 30px;
+}
+
+.btnMngSearch{
+  text-align: center;
+  width: 130px;
+  height: 34px;
+  font-size: 20px;
+  padding: 5px;
+  margin-left: 30px;
+  font-weight: bold;
+  font-family: sans-serif;
+  color: dimgrey;
+}
+
+.btnMngCancel{
+  text-align: center;
+  width: 130px;
+  height: 34px;
+  font-size: 20px;
+  padding: 5px;
+  margin-left: 30px;
+  font-weight: bold;
+  font-family: sans-serif;
+  color: dimgrey;
+}
+
+.nameText{
+  width: 400px;
+  padding: 0.6em;
+  margin-left: 10px;
+}
+
+.emailText{
+  width:400px;
+  padding: 0.6em;
+  margin-left: 30px;
+}
+
+.name{
+  font-size: 20px;
+  font-family: sans-serif;
+  font-weight: 500;
+}
+
+.email{
+  padding-left: 20px;
+  font-size: 20px;
+  font-family: sans-serif;
+  font-weight: 500;
+}
+
+#search{
+  padding-right: 20px;     
+  width: 25px;
+  -webkit-filter: invert(100%);
+}
+
+.search{
+  height: 30px;
+  width: 350px;
+  border: none;
+}
+
+.add-content .caretImg {
+  position: absolute;
+}
+
+#btnSearch {
+  width: 40px;
+  height: 30px;
+  border: none;
+  background: white;
+  padding-top: 5px;
+  color: dimgrey;
+}
+
+ #home:hover::after{
+  content: ' \203A';
+  padding-left: 200px;
+  font-weight: 900;
+}
+
+#add:hover::after{
+  content: ' \203A';
+  padding-left: 120px;
+  font-weight: 900;
+}
+
+ #manage:hover::after{
+  content: ' \203A';
+  padding-left: 180px;
+  font-weight: 900;
+}
+
+#fees:hover::after{
+  content: ' \203A';
+  padding-left: 80px;
+  font-weight: 900;
+}
+
+ #billing:hover::after{
+  content: ' \203A';
+  padding-left: 90px;
+  font-weight: 900;
+}
+
+ #comissions:hover::after{
+  content: ' \203A';
+  padding-left: 145px;
+  font-weight: 900;
+}
+
+#settings:hover::after{
+  content: ' \203A';
+  padding-left: 180px;
+  font-weight: 900;
+}
+
+#proxyLogin{
+  background-color: rgb(114, 209, 247);
+  width: 140px;
+  text-align: center;
+  color: white;
+  border: none;
+  font-family: sans-serif;
+  font-size: 18px;
+  margin-left: 1340px;
+  height: 35px;
+  font-weight: bold;
+}
+
+#Back{
+  margin-right: 20px;
+  color: black;
+  width: 140px;
+  font-size: 18px;
+  font-family: sans-serif;
+  height: 35px;
+}
+
+.userLimit{
+  padding-top: 30px;
+  padding-left: 410px;
+  font-size: x-large;
+  font-family: sans-serif;
+  font-weight: 100;
+  color: dimgrey;
+}
+
+.userSave{
+  background-color: rgb(8, 189, 8);
+  color: white;
+  text-align: center;
+  width: 150px;
+  height: 34px;
+  font-size: 20px;
+  padding: 5px;
+  margin-left: 30px;
+  border: none;
+}
+
+.userLimitBtn{
+  padding-left: 410px;
+  padding-top: 30px
+}
+
+.userCancel{
+  text-align: center;
+  width: 150px;
+  height: 34px;
+  font-size: 20px;
+  padding: 5px;
+  margin-left: 30px;
+}
+
+.user{
+  width: 150px;
+  height: 32px;
+}
+
+.caretImg{
+  width: 20px;
+  color: dimgrey;
+}
+
+.searchImg{
+  width: 17px;
+}
+
+.logo{
+  padding-bottom: 30px;
+}
+
+.manageText{
+  width: 400px;
+  padding: 0.6em;
+  margin-left: 10px
+}
+
+.comapnyList{
+  padding-left: 410px;
+  padding-top: 20px;
+  font-size: x-large;
+}
+
+#companySearch{
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 50%;
+}
+
+#companySearch td, #companySearch th{
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#companySearch tr:nth-child(odd){background-color: #f2f2f2;}
+
+#companySearch th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  padding-right: 135px;
+  background: #f2f2f2;
+}
+
+#items{
+  padding-left: 760px;
+  font-family: sans-serif;
+  font-size: initial;
+  color: dimgrey;
+}
+
+#itemPage{
+  width: 50px;
+  border: none;
+  border-bottom: 1px solid;
+  padding: 4px;
+}
+
+#itemNumber{
+  width: 100px;
+  text-align: center;
+  margin-left: 30px;
+  border: none;
+  color: dimgrey;
+  font-size: initial;
+  font-family: sans-serif;
+}
+
+.leftArrow{
+  display: inline-block;
+  font-size: xxx-large;
+  height: 60px;
+  width: 50px;
+  color: dimgrey;
+  background: white;
+  border: none;
+}
+
+.rightArrow{
+  display: inline-block;
+  font-size: xxx-large;
+  height: 60px;
+  width: 50px;
+  color: dimgrey;
+  background: white;
+  margin-left: 30px;
+  border: none;
+}
+
+/* for Mobile */
+/* @media only screen and (max-height: 768px) {
+  #companyLogo {
+    width: 150px;
+    height: 150px;
+  }
+ .sidenav a{ font-size: 35px;}
+  .homeImg{ width: 35px;}
+  .addImg{width: 35px;}
+  .manageImg {width: 35px;}
+  .feesImg {width: 35px;}
+  .billingImg{width: 35px;}
+  .comissionsImg{width: 35px;}
+  .settingImg{width: 35px;}
+} */
+
+
+
+/* for desktop */
+@media only screen and (max-height: 768px) {
+  #companyLogo {
+    width: 150px;
+    height: 150px;
+  }
+  .sidenavComapines a{ font-size: 40px;}
+  .homeImg{ width: 45px;}
+  .addImg{width: 45px;}
+  .manageImg {width: 45px;}
+  .feesImg {width: 45px;}
+  .billingImg{width: 45px;}
+  .comissionsImg{width: 45px;}
+  .settingImg{width: 45px;}
+  .sidenav{width: 450px;}
+  .add-content{padding-left: 480px;
+    padding-left: 480px;
+    width: 100%;
+    padding-top: 50px;
+    font-size: 30px;
+  }
+  form{padding-left: 300px;}
+  .caretImg{width: 32px;padding-top: 40px}
+  .searchImg{width: 30px;margin-top: 50px;}
+  .search{width: 250px;
+    margin-left: 50px;}
+  .companyInformation{
+    padding-left: 480px;
+    font-size: 50px;
+  }
+  .information{padding-left: 470px;}
+  .name{font-size: 40px;}
+  .email{font-size: 40px;}
+  .nameText{width: 200px;}
+  .emailText{width: 200px;}
+ }
+
