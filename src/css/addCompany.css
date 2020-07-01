@@ -1,0 +1,172 @@
+body{
+   font-family: sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+.wrapper{
+    display: flex;
+    position: relative;
+}
+
+ .sidenavAdd{
+    flex: 0.5;
+    height: 100vh;
+    background: dimgray;
+}
+
+.wrapper .addContent{
+    flex: 2;
+} 
+
+.wrapper ul li{
+    line-height: 3;
+}
+
+.wrapper .sidenavAdd a {
+    color: white;
+    display: block;
+    font-size: 24px;
+  }
+
+  .wrapper .sidenavAdd a{
+    
+  }
+
+.homeImg{    
+    width: 25px;   
+    -webkit-filter: invert(100%); 
+  }
+
+  .addImg{     
+    width: 25px;   
+    -webkit-filter: invert(100%); 
+  }
+
+  .manageImg{
+        
+    width: 25px;   
+    -webkit-filter: invert(100%);
+  }
+
+  .feesImg{
+         
+    width: 25px;   
+    -webkit-filter: invert(100%); 
+  }
+  .billingImg{
+         
+    width: 25px;   
+    -webkit-filter: invert(100%);
+  }
+  .comissionsImg{
+         
+    width: 25px;   
+    -webkit-filter: invert(100%);
+  }
+  .settingImg{
+        
+    width: 25px;   
+    -webkit-filter: invert(100%);
+  }
+
+   .logo{
+    display: flex;  
+    justify-content: center;
+  }
+
+   #companyLogo{
+    width: 80px;
+    height: 80px;
+  } 
+
+  .caretImg{
+    width: 20px;
+    color: dimgrey;
+  }
+  
+  .searchImg{
+    width: 17px;
+  }
+
+  .formContent .caretImg {
+    position: absolute;
+  }
+
+  .formContent{
+      display: flex;
+      justify-content: center;
+  }
+  #btnSearch {
+    background: white;
+    color: dimgrey;
+    border: none;
+}
+  .search{
+    border: none;
+  }
+
+  #Heading{
+      display: flex;
+      font-size: xx-large;
+      color: dimgray;
+  }
+  .companyInformation{
+    color: dimgrey;
+    font-size: xx-large;
+    padding-top: 10px;
+  }
+  .information{
+    color: dimgrey;
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 30px;
+  }
+
+  .nameText{
+    display: flex;
+    width: 400px;
+    padding: 0.6em;
+    
+  }
+  
+  .emailText{
+    display: flex;
+    width:400px;
+    padding: 0.6em;
+    margin-left: 18px;
+  }
+  
+  .name{
+    display: flex;
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: 500;
+  }
+  
+  .email{
+    display: flex;  
+    padding-left: 20px;
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: 500;
+  }
+
+  .btnSave{
+    background-color: rgb(8, 189, 8);
+    color: white;
+    text-align: center;
+    width: 150px;
+    height: 34px;
+    font-size: 20px;
+    padding: 5px;
+    margin-left: 30px;
+    border: none;
+    border-radius: 4px
+  }
