@@ -1,26 +1,29 @@
 {
   "company": [
     {
-      "id": "1",
+      "id": 1,
       "companyName": "ABC",
       "email": "abc@gmail.com"
     },
     {
-      "id": "2",
+      "id": 2,
       "companyName": "XYZ",
       "email": "xyz@gmail.com"
     },
     {
-      "id": "r3biJFb"
+      "companyName": "kIran",
+      "email": "k@gmail.com",
+      "id": 3
     },
     {
-      "id": "Yndxl7D"
+      "companyName": "kavya",
+      "email": "kavya@gmail.com",
+      "id": 4
     },
     {
-      "id": "xrqpN6u"
-    },
-    {
-      "id": "fDaPkzK"
+      "companyName": "Indra",
+      "email": "in@gmail.com",
+      "id": 5
     }
   ]
 }
