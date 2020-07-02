@@ -1,18 +1,27 @@
-// hideContent=()=>{
-//     let content = document.getElementById("home");
-//     if (content.style.display === "none") {
-//       content.style.display = "block";
-//     } else {
-//       content.style.display = "none";
-//     }
-// }
+$(".btnSave").on("click", function (e) {
+    let company = {
+        companyName: $(".nameText").val(),
+        email: $(".emailText").val()
+    }
+    comapnyInformation(company)
+    console.log(company);
+    e.preventDefault();
+    $(".formInfo").trigger("reset");
+});
 
-$(document).ready(function(){
-$("").each(function(index){
-    $(this).hide();
-    return false;
-});
-$(".sidenav #home").click(function(){
-    $("a").show();
-});
-});
+
+
+function comapnyInformation(company) {
+    $.ajax({
+        type: 'POST',
+        url: 'http://localhost:3000/company',
+        dataType: 'json',
+        data: company,
+        success: function (company) {
+            console.log("Added successfully", company);
+        },
+        error: function () {
+            console.log("nont saving employee data");
+        }
+    });
+}
