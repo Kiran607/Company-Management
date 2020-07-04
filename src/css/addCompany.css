@@ -83,12 +83,6 @@ button{
   padding-right: 20px;
 }
 
- a {
-  color: white;
-  display: block;
-  font-size: 24px;
-}
-
 #heading{
   padding-left: 30px;
   font-size: x-large;
@@ -245,18 +239,26 @@ button{
   font-weight: 900;
 }
 
-@media screen and (max-width:600px){
+.toggle{
+  color: white;
+  width: 50px;
+  width: 25px;
+  font-size: xx-large;
+}
+
+.hideMenu{
+  /* display: flex;
+  justify-content: flex-end; */
+display: none;
+}
+
+@media screen and (max-width:767px){
   .sideNav{
    height: 100%;
-   width: auto;
   }
   .content{
     width: 100%;
     height: 100%;
-  }
-  .wrapper{
-    height: auto;
-    width: 100vh;
   }
   .information{
     display: flex;
@@ -266,17 +268,25 @@ button{
     padding-left: 60px;
   }
   .nameText{
-    width: 100px;
-    padding-top: 10px;
+    width: 250px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 1px solid;
   }
   .emailText{
-    width: 100px;
-    margin-left: 10px;
-    padding-top: 10px;
+    width: 250px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 1px solid;
+    margin-left: 0;
   }
   .btnSave{
-    width: 70px;
-    margin-left: 10px;
+    width: 268px;
+    font-size: x-large;
+    font-weight: bold;
+    align-items: center;
+    margin-left: 0;
+    height: auto;
   }
   .email{
     padding-left: 10px;
@@ -285,13 +295,102 @@ button{
     width: 50px;
     overflow-wrap: break-word;
   }
+  table, thead, tbody, th, td, tr { 
+    display: block; 
+    width: 100%;
+  }
+  th{
+    display: none;
+  }
+  td:nth-of-type(1)::before{
+    content: "Company Name";
+    font-size: xx-large;
+  }
+  td:nth-of-type(2)::before{
+    content: "Email";
+    font-size: xx-large;
+  }
+
+  .btnSearch{
+    align-items: center;
+  }
+  #heading{
+    font-size: xx-large;
+  }
+  .companyInformation{
+    font-size: xx-large;
+  }
+  button{
+    padding-top: 20px;
+    padding-bottom: 10px;
+    font-size: 20px;
+    overflow-wrap: break-word;
+    text-align: left;
+  }
+  .hideMenu{
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .wrapper.collapse .sideNav{
+    width: 50px;
+  }
+  
+  .wrapper.collapse .sideNav button{
+    text-align: center;
+  }
+  
+  .wrapper.collapse .sideNav .logo{
+    justify-content: flex-start;
+  }
+  #home:hover::after{
+    content: ' \203A';
+    font-weight: 900;
+    display: none;
+  }
+  
+  #add:hover::after{
+    content: ' \203A';
+    font-weight: 900;
+    display: none;
+  }
+  
+   #manage:hover::after{
+    content: ' \203A';
+    font-weight: 900;
+    display: none;
+  }
+  
+  #fees:hover::after{
+    content: ' \203A';
+    font-weight: 900;
+    display: none;
+  }
+  
+   #billing:hover::after{
+    content: ' \203A';
+    font-weight: 900;
+    display: none;
+  }
+  
+   #comissions:hover::after{
+    content: ' \203A';
+    font-weight: 900;
+    display: none;
+  }
+  
+  #settings:hover::after{
+    content: ' \203A';
+    font-weight: 900;
+    display: none;
+  }
 }
 
 
-@media screen and (max-width:350px){
-  .wrapper{
-    flex-direction: column;
-  }
+
+
+/* @media screen and (max-width:400px){
+  
   .name{
     width: 0;
   }
@@ -316,4 +415,4 @@ button{
   .btnSave{
     margin-left: 20px;
   }
-}
+} */
