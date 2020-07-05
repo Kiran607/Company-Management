@@ -12,9 +12,9 @@
 
 <body>
     <div class="wrapper">
-        <div class="sideNav">
-            <div class="hideMenu">
-                 <label for="toggle" class="toggle">&#9776 </label>
+        <div class="sideNav" id="side">
+            <div class="closeBtn">
+                <button class="closeToggle" id="closeBtn">×</button>
             </div>
             <div class="logo">
                 <img src="../assests/logo.png" alt="" id="companyLogo">
@@ -28,6 +28,9 @@
             <button id="settings"><img src="../assests/cog-solid.svg" alt="" class="settingImg">Setting</button>
         </div>
         <div class="content">
+                <div class="hideMenu">
+                        <button class="toggle-collapse" id="toggleButton"><span class="toggleIcon">&#9776</span></button>
+                   </div>
             <div id="heading">
                 Add Company
                 <div class="formContent">
@@ -39,7 +42,7 @@
                 <hr>
             </div>
             <div class="information">
-                <form action="" class="formInfo">
+                <form action="" class="formInfo" autocomplete="off">
                     <table>
                         <tr>
                             <th><label for="comapnyName" class="name">Company Name</label></th>
@@ -47,13 +50,13 @@
                         </tr>
                         <tr>
                             <td>
-                                <input type="text" class="nameText">
+                                <input type="text" class="nameText" id="companyName">
                             </td>
                             <td>
-                                <input type="text" class="emailText">
+                                <input type="text" class="emailText" id="email">
                             </td>
                             <td>
-                                <button class="btnSave" >Save</button>
+                                <button class="btnSave" id="saveBtn" >Save</button>
                             </td>
                         </tr>
                     </table>
