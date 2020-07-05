@@ -28,21 +28,52 @@ let comapnyInformation=(company)=> {
     });
 }
 
+$(document).ready(function () {
+    getDetails();
+});
+
+function getDetails() {
+    $('#details').html('');
+    $.ajax({
+        method: 'GET',
+        url: 'http://localhost:3000/company',
+        dataType: 'json',
+        data: {
+            test: 'test data'
+        },
+        success: function (data) {
+            $.each(data, function (i, data1) {
+                let tblRow = "<tr><td>" + data1.companyName + "</td>" + "<td>" + data1.email + "</td>"
+                    + "<td>" + "<button class=proxyLogin data-id=" + data1.id + " >Proxy Login</button></td>"
+                    + "<td >" + "<button class=viewCompany data-id=" + data1.id + ">View Company</button></td></tr>"
+                $(tblRow).appendTo("#details");
+            });
+        },
+
+        error: function () {
+            alert("not fetching employee data");
+        }
+
+    });
+}
+
 const matchResult=window.matchMedia("(max-width:767px)");
 
-$(".hideMenu").click(function(){
-    $(".wrapper").toggleClass("collapse");
- });
+const  toggleBtn=document.getElementById('toggleButton');
+const closeToggle=document.getElementById('closeBtn');
 
-// function openNav() {
-//     document.getElementById("nav").style.width = "250px";
-//     document.getElementById("con").style.marginLeft = "250px";
-//   }
+
+
+let openNav=()=> {
+    document.getElementById("side").style.width = "80%";
+  }
   
-//   function closeNav() {
-//     document.getElementById("mySidebar").style.width = "0";
-//     document.getElementById("main").style.marginLeft= "0";
-//   }
+  let closeNav=()=> {
+    document.getElementById("side").style.width = "0";
+  }
+
+  toggleBtn.addEventListener('click', openNav);
+  closeToggle.addEventListener('click', closeNav);
 
 
 const saveButton = document.getElementById('saveBtn');
